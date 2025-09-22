@@ -146,13 +146,20 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-brand img {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
 }
 
 .navbar-brand span {
@@ -160,6 +167,7 @@ a:focus {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
+  display: none; /* Hide text when using logo only */
 }
 
 .custom_nav-container {
@@ -930,7 +938,7 @@ a:focus {
 .feature-item i {
   margin-right: 15px;
   margin-top: 3px;
-  color: #ff6b35;
+  color: #EA9249;
   min-width: 20px;
 }
 
@@ -941,7 +949,7 @@ a:focus {
 
 /* CTA Button */
 .cta-button {
-  background-color: #ff6b35;
+  background-color: #EA9249;
   color: white !important;
   padding: 12px 30px;
   border-radius: 25px;
@@ -953,7 +961,7 @@ a:focus {
 }
 
 .cta-button:hover {
-  background-color: #e55a2b;
+  background-color: #d8834a;
   transform: translateY(-2px);
   text-decoration: none;
   color: white !important;
@@ -973,7 +981,7 @@ a:focus {
 .step-number {
   width: 60px;
   height: 60px;
-  background-color: #ff6b35;
+  background-color: #EA9249;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -999,7 +1007,7 @@ a:focus {
 }
 
 .trust-item h4 {
-  color: #ff6b35;
+  color: #EA9249;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -1019,7 +1027,7 @@ a:focus {
 .benefit-item i {
   margin-right: 15px;
   margin-top: 3px;
-  color: #ff6b35;
+  color: #EA9249;
   min-width: 20px;
 }
 
@@ -1047,7 +1055,7 @@ a:focus {
 }
 
 .faq-item h4 {
-  color: #ff6b35;
+  color: #EA9249;
   margin-bottom: 15px;
   font-weight: 600;
 }
@@ -1059,7 +1067,7 @@ a:focus {
 
 /* Final CTA Section */
 .final_cta_section {
-  background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%);
+  background: linear-gradient(135deg, #EA9249 0%, #d8834a 100%);
   color: white;
 }
 
@@ -1076,12 +1084,12 @@ a:focus {
 
 .final_cta_section .cta-button {
   background-color: white;
-  color: #ff6b35 !important;
+  color: #EA9249 !important;
 }
 
 .final_cta_section .cta-button:hover {
   background-color: #f8f9fa;
-  color: #e55a2b !important;
+  color: #d8834a !important;
 }
 
 /* Badge for NEW feature */
@@ -1089,8 +1097,8 @@ a:focus {
   font-size: 10px;
   padding: 4px 8px;
   border-radius: 12px;
-  background-color: #ffc107;
-  color: #000;
+  background-color: #EA9249;
+  color: white;
   margin-left: 10px;
 }
 
@@ -1099,11 +1107,11 @@ a:focus {
   background-color: #f8f9fa;
   padding: 20px;
   border-radius: 10px;
-  border-left: 4px solid #ff6b35;
+  border-left: 4px solid #EA9249;
 }
 
 .early-access-benefits h5 {
-  color: #ff6b35;
+  color: #EA9249;
   margin-bottom: 15px;
 }
 
@@ -1201,7 +1209,7 @@ a:focus {
 .countdown-number {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffd700;
+  color: #FFFFFF;
   line-height: 1;
 }
 
@@ -1217,9 +1225,52 @@ a:focus {
 
 .flyer_section .cta-button:hover {
   background-color: #f8f9fa !important;
-  color: #e55a2b !important;
+  color: #d8834a !important;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Logo styling */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand img {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
+/* Features section icons */
+.service_section .img-box i {
+  color: #EA9249 !important;
+}
+
+/* About page highlights */
+.about-highlights {
+  margin: 30px 0;
+}
+
+.about-highlights .highlight-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+.about-highlights .highlight-item i {
+  margin-right: 15px;
+  font-size: 18px;
+  min-width: 25px;
+}
+
+.about-highlights .highlight-item span {
+  font-size: 16px;
+  color: #333;
 }
 
 /* Responsive adjustments for flyer */
@@ -1234,6 +1285,10 @@ a:focus {
   
   .countdown-number {
     font-size: 2rem;
+  }
+  
+  .navbar-brand img {
+    height: 40px !important;
   }
 }
 
