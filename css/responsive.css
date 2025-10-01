@@ -10,6 +10,11 @@
     padding: 75px 0;
   }
 
+  .slider_section .detail-box {
+    max-width: 100%;
+    padding-right: 15px;
+  }
+
   .slider_section .detail-box h1 {
     font-size: 2.5rem;
   }
@@ -44,6 +49,10 @@
 }
 
 @media (max-width: 767px) {
+  .hero_area .hero_bg_box::after {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
   .hero_area .hero_bg_box img {
     -o-object-position: center;
     object-position: center;
@@ -77,13 +86,455 @@
   }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+  .slider_section .detail-box {
+    max-width: 100%;
+    padding-right: 10px;
+  }
 
-@media (max-width: 480px) {}
+  .slider_section .detail-box h1 {
+    font-size: 1.8rem;
+  }
 
-@media (max-width: 420px) {}
+  .slider_section .detail-box p {
+    font-size: 14px;
+  }
 
-@media (max-width: 375px) {}
+  .feature-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .feature-item i {
+    margin-bottom: 8px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta-button.large {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .heading_container h2 {
+    font-size: 1.8rem;
+  }
+
+  .service_section .box {
+    margin-top: 30px;
+    padding: 30px 15px;
+  }
+
+  .service_section .box .detail-box h5 {
+    font-size: 18px;
+  }
+
+  .flyer_section h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .highlight-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .highlight-item span {
+    font-size: 13px;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .step-box h4 {
+    font-size: 16px;
+  }
+
+  .trust-item h4,
+  .upcoming-feature h4 {
+    font-size: 18px;
+  }
+
+  .faq-item {
+    padding: 20px 15px;
+  }
+
+  .faq-item h4 {
+    font-size: 16px;
+  }
+
+  .final_cta_section h2 {
+    font-size: 1.8rem;
+  }
+
+  .final_cta_section p {
+    font-size: 16px;
+  }
+
+  .layout_padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero_area .hero_bg_box::after {
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .slider_section .detail-box h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .slider_section .detail-box p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .feature-item span {
+    font-size: 12px;
+  }
+
+  .cta-button {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  .heading_container h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .heading_container p {
+    font-size: 14px;
+  }
+
+  .service_section .box {
+    padding: 25px 12px;
+  }
+
+  .service_section .box .img-box i {
+    font-size: 2rem !important;
+  }
+
+  .service_section .box .detail-box h5 {
+    font-size: 16px;
+  }
+
+  .service_section .box .detail-box p {
+    font-size: 13px;
+  }
+
+  .flyer_section {
+    padding: 40px 0;
+  }
+
+  .flyer_section h2 {
+    font-size: 1.3rem !important;
+    margin-bottom: 15px !important;
+  }
+
+  .highlight-item i {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .highlight-item span {
+    font-size: 12px;
+  }
+
+  .flyer_section .cta-button {
+    font-size: 14px !important;
+    padding: 12px 20px !important;
+  }
+
+  .countdown-number {
+    font-size: 1.8rem;
+  }
+
+  .countdown-label {
+    font-size: 12px;
+  }
+
+  .step-box {
+    padding: 20px 15px;
+  }
+
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .trust-item,
+  .upcoming-feature {
+    padding: 20px 15px;
+  }
+
+  .trust-item i,
+  .upcoming-feature i {
+    font-size: 2rem !important;
+  }
+
+  .faq-item h4 {
+    font-size: 15px;
+  }
+
+  .faq-item p {
+    font-size: 13px;
+  }
+
+  .final_cta_section h2 {
+    font-size: 1.5rem;
+  }
+
+  .final_cta_section p {
+    font-size: 14px;
+  }
+
+  .benefit-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .benefit-item i {
+    margin-bottom: 8px;
+  }
+
+  .layout_padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .slider_section .detail-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .slider_section .detail-box p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .feature-item {
+    margin-bottom: 12px;
+    padding: 8px 0;
+  }
+
+  .feature-item span {
+    font-size: 11px;
+  }
+
+  .cta-button {
+    padding: 9px 16px;
+    font-size: 12px;
+  }
+
+  .heading_container h2 {
+    font-size: 1.4rem;
+  }
+
+  .service_section .box {
+    padding: 20px 10px;
+  }
+
+  .flyer_section h2 {
+    font-size: 1.2rem !important;
+  }
+
+  .highlight-item span {
+    font-size: 11px;
+  }
+
+  .step-box h4,
+  .trust-item h4,
+  .upcoming-feature h4 {
+    font-size: 15px;
+  }
+
+  .step-box p,
+  .trust-item p,
+  .upcoming-feature p {
+    font-size: 12px;
+  }
+
+  .faq-item {
+    padding: 15px 12px;
+  }
+
+  .final_cta_section h2 {
+    font-size: 1.3rem;
+  }
+
+  .final_cta_section p {
+    font-size: 13px;
+  }
+
+  .layout_padding {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (max-width: 375px) {
+  .slider_section .detail-box h1 {
+    font-size: 1.4rem;
+  }
+
+  .slider_section .detail-box p {
+    font-size: 11px;
+  }
+
+  .feature-item i {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .feature-item span {
+    font-size: 10.5px;
+  }
+
+  .cta-button {
+    padding: 8px 15px;
+    font-size: 11px;
+  }
+
+  .heading_container h2 {
+    font-size: 1.3rem;
+  }
+
+  .heading_container p {
+    font-size: 12px;
+  }
+
+  .service_section .box {
+    margin-top: 25px;
+    padding: 18px 8px;
+  }
+
+  .service_section .box .img-box i {
+    font-size: 1.8rem !important;
+  }
+
+  .service_section .box .detail-box h5 {
+    font-size: 15px;
+  }
+
+  .service_section .box .detail-box p {
+    font-size: 12px;
+  }
+
+  .flyer_section {
+    padding: 35px 0;
+  }
+
+  .flyer_section h2 {
+    font-size: 1.1rem !important;
+  }
+
+  .highlight-item {
+    margin-bottom: 10px;
+    padding: 6px 0;
+  }
+
+  .highlight-item i {
+    font-size: 14px;
+  }
+
+  .highlight-item span {
+    font-size: 10px;
+  }
+
+  .flyer_section .cta-button {
+    font-size: 13px !important;
+    padding: 10px 18px !important;
+  }
+
+  .countdown-number {
+    font-size: 1.6rem;
+  }
+
+  .countdown-label {
+    font-size: 11px;
+  }
+
+  .step-box {
+    padding: 18px 12px;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .step-box h4,
+  .trust-item h4,
+  .upcoming-feature h4 {
+    font-size: 14px;
+  }
+
+  .step-box p,
+  .trust-item p,
+  .upcoming-feature p {
+    font-size: 11px;
+  }
+
+  .trust-item i,
+  .upcoming-feature i {
+    font-size: 1.8rem !important;
+    margin-bottom: 15px;
+  }
+
+  .faq-item {
+    padding: 12px 10px;
+  }
+
+  .faq-item h4 {
+    font-size: 14px;
+  }
+
+  .faq-item p {
+    font-size: 12px;
+  }
+
+  .final_cta_section h2 {
+    font-size: 1.2rem;
+  }
+
+  .final_cta_section p {
+    font-size: 12px;
+  }
+
+  .benefit-item span {
+    font-size: 12px;
+  }
+
+  .layout_padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 @media (min-width: 1200px) {
   .container {

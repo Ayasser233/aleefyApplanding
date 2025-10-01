@@ -2,12 +2,13 @@
 @import url("font-awesome.min.css");
 body {
   font-family: 'Poppins', sans-serif;
-  color: #000000;
+  color: #2d2d2d;
   background-color: #ffffff;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
+  color: #4a4a4a;
 }
 
 .layout_padding {
@@ -52,6 +53,7 @@ p {
 .heading_container h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  color: #EA9249;
 }
 
 .heading_container.heading_center {
@@ -80,6 +82,11 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
+}
+
+.hero_area .hero_bg_box::after {
+  content: none !important;
 }
 
 .hero_area .hero_bg_box img {
@@ -336,6 +343,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  z-index: 2;
 }
 
 .slider_section .row {
@@ -344,16 +352,37 @@ a:focus {
           align-items: center;
 }
 
+.slider_section .detail-box {
+  max-width: 600px;
+  padding-right: 20px;
+}
+
 .slider_section .detail-box h1 {
   font-size: 3rem;
-  padding-bottom: 15px;
+  padding: 20px 25px;
   position: relative;
   text-transform: uppercase;
   font-weight: 600;
+  color: #2d2d2d;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .slider_section .detail-box h1 span {
   font-size: 5rem;
+}
+
+.slider_section .detail-box p {
+  color: #4a4a4a;
+  line-height: 1.7;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 .slider_section .detail-box a {
@@ -478,6 +507,7 @@ a:focus {
 .service_section .box .detail-box h5 {
   font-weight: 600;
   font-size: 20px;
+  color: #333;
 }
 
 .service_section .box .detail-box p {
@@ -938,13 +968,15 @@ a:focus {
 .feature-item i {
   margin-right: 15px;
   margin-top: 3px;
-  color: #EA9249;
+  color: #ffffff;
   min-width: 20px;
 }
 
 .feature-item span {
   font-size: 14px;
   line-height: 1.5;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 /* CTA Button */
@@ -993,8 +1025,9 @@ a:focus {
 }
 
 .step-box h4 {
-  color: #333;
+  color: #2d2d2d;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
 /* Trust Section */
@@ -1041,8 +1074,9 @@ a:focus {
 }
 
 .upcoming-feature h4 {
-  color: #333;
+  color: #2d2d2d;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
 /* FAQ Section */
