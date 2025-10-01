@@ -2,7 +2,8 @@ name: Deploy to Server
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main   # or master, depends on your repo
 
 jobs:
   deploy:
@@ -12,15 +13,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup SSH
+      - name: Install SSH key
         uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Deploy to server
+      - name: Deploy via SSH
         run: |
-            ssh -o StrictHostKeyChecking=no aleef8629@95.111.253.44 \
-            "cd /home/aleefy-app.com/public_html && git pull origin main"
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} \
+          "cd ${{ secrets.SERVER_PATH }} && git pull origin main"
 
       - name: Notify deployment status
         run: echo "✅ Deployment completed successfully!"
