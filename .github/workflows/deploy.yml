@@ -19,8 +19,8 @@ jobs:
 
       - name: Deploy to server
         run: |
-          ssh -o StrictHostKeyChecking=no aleef8629@95.111.253.44 \
-          "cd /home/aleefy-app.com/public_html && git pull origin main"
+            ssh -o StrictHostKeyChecking=no aleef8629@95.111.253.44 \
+            "cd /home/aleefy-app.com/public_html && git pull origin main"
 
       - name: Notify deployment status
         run: echo "✅ Deployment completed successfully!"
