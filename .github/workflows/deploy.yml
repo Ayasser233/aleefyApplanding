@@ -18,10 +18,10 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Deploy via SSH
+      - name: Deploy to server
         run: |
           ssh -o StrictHostKeyChecking=no aleef8629@aleefy-app.com \
-          "cd /home/aleef8629/aleefy-app && git pull origin main"
+          "cd /home/aleefy-app.com/public_html && git pull origin main"
 
       - name: Notify deployment status
         run: echo "✅ Deployment completed successfully!"
