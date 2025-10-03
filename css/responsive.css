@@ -33,11 +33,15 @@
 @media (max-width: 992px) {
 
   .hero_area {
-    min-height: auto;
+    min-height: 100vh;
+    padding: 0;
   }
 
   .slider_section {
     padding: 75px 0;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
   }
 
   .slider_section .detail-box {
@@ -105,6 +109,13 @@
     text-align: left;
     margin-left: 0;
     padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+  }
+
+  .slider_section .container {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   /* Ensure step order remains 1-2-3 on mobile */
@@ -163,41 +174,57 @@
 }
 
 @media (max-width: 576px) {
+  .slider_section {
+    padding: 60px 0 40px 0;
+  }
+
   .slider_section .detail-box {
     max-width: 100%;
     padding-right: 10px;
     margin-left: 0;
     padding-left: 15px;
+    text-align: center;
   }
 
   .slider_section .detail-box h1 {
     font-size: 1.8rem;
     letter-spacing: 0.5px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 10px rgba(234, 146, 73, 0.4);
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .slider_section .detail-box p {
     font-size: 14px;
+    text-align: center;
+  }
+
+  .hero-features {
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .feature-item {
+    margin-bottom: 12px;
+    padding: 8px 0;
   }
 
   .feature-item span {
     font-size: 13px;
-  }
-
-  .feature-item {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    line-height: 1.4;
   }
 
   .feature-item i {
-    margin-bottom: 8px;
+    margin-right: 12px;
+    font-size: 16px;
   }
 
   .cta-button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 14px;
     width: 100%;
+    text-align: center;
+    margin-top: 20px;
     text-align: center;
   }
 
@@ -284,10 +311,15 @@
     background: rgba(0, 0, 0, 0.55);
   }
 
+  .slider_section {
+    padding: 50px 0 35px 0;
+  }
+
   .slider_section .detail-box {
     margin-left: 0;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
   }
 
   .slider_section .detail-box h1 {
@@ -295,24 +327,39 @@
     line-height: 1.3;
     letter-spacing: 0.3px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  }
-
-  .feature-item span {
-    font-size: 12px;
+    margin-bottom: 18px;
+    text-align: center;
   }
 
   .slider_section .detail-box p {
     font-size: 13px;
     line-height: 1.5;
+    text-align: center;
+  }
+
+  .hero-features {
+    margin: 18px 0;
+  }
+
+  .feature-item {
+    margin-bottom: 10px;
+    padding: 6px 0;
   }
 
   .feature-item span {
     font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .feature-item i {
+    margin-right: 10px;
+    font-size: 15px;
   }
 
   .cta-button {
     padding: 10px 18px;
     font-size: 13px;
+    margin-top: 18px;
   }
 
   .heading_container h2 {
