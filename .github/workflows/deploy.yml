@@ -21,7 +21,7 @@ jobs:
       - name: Deploy via SSH
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} \
-          "cd ${{ secrets.SERVER_PATH }} && git pull origin main"
+          "cd ${{ secrets.SERVER_PATH }} && git pull origin main && npm install && npm run build"
 
       - name: Notify deployment status
-        run: echo "✅ Deployment completed successfully!"
+        run: echo "✅ Deployment and build completed successfully!"
