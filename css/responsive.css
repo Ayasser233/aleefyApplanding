@@ -118,15 +118,6 @@
     padding-right: 10px;
   }
 
-  .header_section {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    background-color: rgba(234, 146, 73, 0.95);
-    backdrop-filter: blur(10px);
-  }
-
   /* Ensure step order remains 1-2-3 on mobile */
   #how-it-works .row {
     display: flex;
@@ -184,8 +175,7 @@
 
 @media (max-width: 576px) {
   .slider_section {
-    padding: 100px 0 50px 0;
-    min-height: calc(100vh - 80px);
+    padding: 60px 0 40px 0;
   }
 
   .slider_section .detail-box {
@@ -323,8 +313,7 @@
   }
 
   .slider_section {
-    padding: 120px 0 40px 0;
-    min-height: 100vh;
+    padding: 50px 0 35px 0;
   }
 
   .slider_section .detail-box {
@@ -579,7 +568,7 @@
 
 @media (max-width: 375px) {
   .slider_section {
-    padding: 130px 0 40px 0;
+    padding: 45px 0 35px 0;
   }
 
   .slider_section .detail-box {
