@@ -470,6 +470,39 @@
   <script src="js/bootstrap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/custom.js"></script>
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/sw.js").then((reg) => {
+      console.log("Service Worker registered:", reg);
+
+      // listen for updates
+      reg.onupdatefound = () => {
+        const newWorker = reg.installing;
+        newWorker.onstatechange = () => {
+          if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
+            // Create a banner for update
+            let banner = document.createElement("div");
+            banner.innerHTML = `
+              <div style="
+                position:fixed; bottom:0; left:0; right:0; 
+                background:#222; color:#fff; padding:10px; 
+                text-align:center; z-index:9999;">
+                يوجد تحديث جديد للموقع! 
+                <button style="margin-left:10px; padding:5px 10px; cursor:pointer;">
+                  إعادة التحميل
+                </button>
+              </div>`;
+            document.body.appendChild(banner);
+
+            banner.querySelector("button").addEventListener("click", () => {
+              window.location.reload(true);
+            });
+          }
+        };
+      };
+    });
+  }
+</script>
 
 </body>
 
